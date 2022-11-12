@@ -1,0 +1,58 @@
+{
+  "name": "frontent-setup",
+  "version": "0.1.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "prepare": "husky install",
+    "test": "jest",
+    "semantic-release": "semantic-release"
+  },
+  "lint-staged": {
+    "**/*.(js|ts)": [
+      "prettier --write",
+      "eslint --fix"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vdseregin/frontent-setup.git"
+  },
+  "author": "vdseregin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vdseregin/frontent-setup/issues"
+  },
+  "homepage": "https://github.com/vdseregin/frontent-setup#readme",
+  "devDependencies": {
+    "@babel/core": "7.20.2",
+    "@commitlint/cli": "17.2.0",
+    "@commitlint/config-conventional": "17.2.0",
+    "@storybook/addon-actions": "6.5.13",
+    "@storybook/addon-essentials": "6.5.13",
+    "@storybook/addon-links": "6.5.13",
+    "@storybook/builder-webpack4": "6.5.13",
+    "@storybook/manager-webpack4": "6.5.13",
+    "@storybook/web-components": "6.5.13",
+    "@typescript-eslint/eslint-plugin": "5.42.1",
+    "@typescript-eslint/parser": "5.42.1",
+    "babel-loader": "8.3.0",
+    "eslint": "8.27.0",
+    "eslint-config-airbnb-base": "15.0.0",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-plugin-import": "2.26.0",
+    "eslint-plugin-prettier": "4.2.1",
+    "husky": "8.0.2",
+    "jest": "29.3.1",
+    "lint-staged": "13.0.3",
+    "prettier": "2.7.1",
+    "semantic-release": "19.0.5",
+    "stylelint-config-prettier": "9.0.4",
+    "typescript": "4.8.4"
+  },
+  "dependencies": {
+    "lit-html": "2.4.0"
+  }
+}
